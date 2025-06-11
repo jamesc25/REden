@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(135deg, #e0ffd8 0%, #b6e2a1 40%, #7fc97f 100%);
+  --foreground: #234d20;
+  --eden-green-1: #e0ffd8;
+  --eden-green-2: #b6e2a1;
+  --eden-green-3: #7fc97f;
+  --eden-flower-pink: #f7c6c7;
+  --eden-flower-yellow: #fff7ae;
+  --eden-bark: #a67c52;
+  --font-sans: var(--font-geist-sans, Arial, Helvetica, sans-serif);
+  --font-mono: var(--font-geist-mono, monospace);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(135deg, #234d20 0%, #4e944f 60%, #b6e2a1 100%);
+    --foreground: #e0ffd8;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
